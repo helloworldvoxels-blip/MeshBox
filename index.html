@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MESHBOX - 3D Sandbox</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 10px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .logo-text {
+            font-size: 42px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            letter-spacing: -1px;
+        }
+        .logo-mesh { color: #0000AA; }
+        .logo-box { color: #CC0000; }
+        .logo-beta { font-size: 16px; color: #666666; font-weight: normal; vertical-align: super; }
+        
+        .main-container {
+            display: flex;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            width: 220px;
+            padding-right: 15px;
+            border-right: 1px solid #CCCCCC;
+            font-size: 14px;
+        }
+        .content {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+        
+        h3 {
+            font-size: 16px;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            margin: 0 0 15px 0;
+            padding-left: 15px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #EE0000;
+        }
+        
+        .download-box {
+            background-color: #EEEEEE;
+            border: 2px solid #999999;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background-color: #00AA00;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px outset #00FF00;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .download-btn:active {
+            border-style: inset;
+        }
+        
+        .screenshot-gallery {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .screenshot-gallery img {
+            width: 48%;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-text">
+            <span class="logo-mesh">MESH</span><span class="logo-box">BOX</span> <span class="logo-beta">v1.0</span>
+        </div>
+        <div>Build, spawn cubes, and experiment with 3D physics in a sandbox!</div>
+    </div>
+
+    <div class="main-container">
+        <!-- Left Sidebar / Navigation Menu -->
+        <div class="sidebar">
+            <strong>Navigation</strong>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+            </ul>
+
+            <strong>Quick Links</strong>
+            <ul>
+                <li><a href="MeshBox_Installer.exe">Download Installer</a></li>
+                <li><a href="https://github.com/helloworldvoxels-blip/MeshBox" target="_blank">GitHub Repository</a></li>
+            </ul>
+
+            <strong>Tools & Controls</strong>
+            <ul>
+                <li>Spawn Cubes (Green Tool)</li>
+                <li>Move & Select (Red Tool)</li>
+                <li>Utah Teapot lol</li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            
+            <!-- Download Promotion Box -->
+            <div class="download-box">
+                <h2 style="margin-top:0; font-family: Arial, sans-serif;">Get MESHBOX Now!</h2>
+                <p>PLAYYY DAA ultimate lightweight C++ 3D sandbox. i dont know wat to put here lol.</p>
+                <a href="MeshBox_Installer.exe" class="download-btn">Download MeshBox_Installer.exe</a>
+                <p style="font-size: 12px; color: #666666; margin-bottom:0;">Compatible with Windows. srry mac users lol.</p>
+            </div>
+
+            <h3 id="screenshots">Game Screenshots</h3>
+            <div class="screenshot-gallery">
+                <img src="shot1.png" alt="MeshBox Gameplay 1">
+                <img src="shot2.png" alt="MeshBox Gameplay 2">
+            </div>
+
+            <h3 id="features">What is MESHBOX?</h3>
+            <p><strong>MESHBOX</strong> is a custom C++ 3D sandbox game where you can spawn objects, yep thats all</p>
+
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Spawn & Build:</strong> Use the green tool to spawn red blocks and construct custom formations.</li>
+                <li><strong>Interactive Tools:</strong> Use the red move/select tool to click, drag, and position objects across the map.</li>
+                <li><strong>plus:</strong> ENJOY!!!!</strong/>
+
+        </div>
+    </div>
+
+</body>
+</html>
